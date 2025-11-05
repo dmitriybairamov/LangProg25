@@ -35,12 +35,18 @@ class Pr003 {
 			}
 		
 		//Обработка событий класс ArithmeticException
+		/*
 			catch(ArithmeticException exc2) {
 				System.out.println("Исключительная ситуация: неверная арифметическая операция");
 			}
 			System.out.println("После оператора catch");
 		}
-
+		*/
+		//Использование класса Throwable для обработки всех исключений 
+		catch(Throwable exc) {
+			System.out.println("Исключение, для которого не написан специфический обработчик");
+		}
 	}
+}
 }
 
